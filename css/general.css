@@ -1,0 +1,300 @@
+/* MARGENES Y FUENTES GENERALES */
+
+@font-face {
+    font-family: Ciber;
+    src: url(../fonts/Aldrich-Regular.ttf);
+}
+@font-face {
+    font-family: Parr-TL ;
+    src: url(../fonts/TitilliumWeb-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: Ciber;    
+}
+
+/* -------------MENU SUPERIOR-------------- */
+
+header{
+    top: 0% ;        
+    position: fixed; 
+    z-index: 10;
+    width: 100%;
+    height: 110px;
+    padding-top: 0.5%;
+    background: linear-gradient(#000000,transparent);
+    display: flex;   
+}
+.barra{
+    position: relative;
+    width: 100%;
+    height: 75px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+.menu-amb{
+    display: none; 
+}
+.cerrar-amb{
+    display: none; 
+}
+.logo{
+    height: 65px;
+    margin-left: 2%;
+    background: transparent;
+}
+.menu a{
+    transition: color 0.4s; 
+    padding:0 15px;
+    text-decoration: none;
+}
+.login a:hover, .menu a:hover {
+    color: rgb(246, 107, 14);
+}
+.barra .login{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+    background: transparent;
+    align-items: center;
+    gap: 12px;   
+}
+.login img{
+width: 20px;
+}
+
+/* ----------SLIDER------------- */
+
+section{
+    width: 100%;   
+    background-color:black;
+}
+
+.sec-1{
+    
+    height: 700px;
+    display: flex;
+}
+.sec-1 .posicion{
+    
+    width: 100%;
+    height: 700px;
+    top: 0%;
+    left: 0%;
+    
+    
+}
+
+.sec-1 .slider{
+    background-image: url(../img/slider-p/aorus1.jpg);
+    background-size: cover;
+    animation: animacion-promocional 40s ease 3s;  
+    animation-iteration-count:infinite; 
+    
+}
+@keyframes animacion-promocional{
+    5%{
+        background-image: url(../img/slider-p/aorus5.jpg);
+    background-size: cover;
+    }
+    20%{
+        background-image: url(../img/slider-p/aorus5.jpg);
+        background-size: cover;
+    }
+    25%{
+        background-image: url(../img/slider-p/aorus4.jpg);
+    background-size: cover;
+    }
+    40%{
+        background-image: url(../img/slider-p/aorus4.jpg);
+        background-size: cover;
+    }
+    45%{
+        background-image: url(../img/slider-p/aorus3.jpg);
+    background-size: cover;
+    }
+    60%{
+        background-image: url(../img/slider-p/aorus3.jpg);
+        background-size: cover;
+    }
+    65%{
+        background-image: url(../img/slider-p/aorus2.jpg);
+    background-size: cover;
+    }
+    80%{
+        background-image: url(../img/slider-p/aorus2.jpg);
+        background-size: cover;
+    }
+    85%{
+        background-image: url(../img/slider-p/aorus1.jpg);
+    background-size: cover;
+    }
+    100%{
+        background-image: url(../img/slider-p/aorus1.jpg);
+        background-size: cover;
+    }
+}
+
+/* ---------FOOTER-------- */
+
+footer{
+    width: 100%;
+    height: 450px;
+    background-color: #1f1f1f;
+    display: grid;  
+    grid-template-rows: 30% 20% 50%;
+}
+footer div{
+    display: flex;
+    justify-content: center ;
+}
+footer .logo-f{
+    grid-row: 1/2;
+    padding-top: 2rem;
+}
+footer .redes-s{
+    grid-row: 2/3;
+    align-items: center;
+    gap: 1rem;
+}
+footer .listas{
+    grid-row: 3/4;
+    line-height: 2rem; 
+    gap: 4%;
+    font-size: 20px;
+}
+footer ul{
+    list-style: none;
+}
+footer .sub-li{
+    font-family: Parr-TL;
+    font-size: 14px;
+}
+footer .listas a{
+ text-decoration: none;   
+}
+
+/*---------------------- MENU RESPONSIVO  900px--------------------------*/
+
+@media(max-width: 900px){    
+    .barra{
+        flex-direction: column;
+    }
+    .menu-amb{
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        width: 30px;
+        display:unset;
+        cursor: pointer;
+        transition: 0.15s;
+    }
+    .menu-amb:hover{
+        width: 40px;   
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+        transition: 0.2s;
+        width: 50%;   
+        background-color:chocolate;
+        position: absolute;
+        left: 15px;
+        top: 65px;
+        opacity: 0.9;
+    }
+    .menu a:hover{
+        color:#000000;
+    }
+    h1{
+        display: none;
+    }
+    .login{
+        right: 15px;
+        top: 20px;
+    }
+    .login img{
+        transition: 0.2s;
+    }
+    .login img:hover{
+        width: 30px;
+    }
+    .sec-1 .slider{
+        background-position: center;
+        height: 400px;
+    }
+     #inp-amb:checked ~.menu{
+        width: 0%;  
+        font-size: 0;
+    } 
+    .sub-t{
+        font-size: 35px;
+    }
+    .texto{
+        font-size: 18px;
+    }
+}
+
+
+/*---------------------- MENU RESPONSIVO  500px--------------------------*/
+
+@media(max-width: 500px){
+    .logo{
+        height: 50px;
+        padding-top: 5px;
+    }
+    .header{
+        height: 70px;
+    }
+    .menu{
+        width: 93%;
+    }
+     #inp-amb:checked ~.menu{
+        width: 0%;  
+        font-size: 0;
+    }
+    .sub-t{
+        color: aqua;
+        font-size: 25px;
+    }
+    .texto{
+        font-size: 14px;
+        text-align:center;
+    }
+    .footer{
+        
+        grid-template-rows: 50px 50px 450px;
+        height: 800px;
+        justify-content: center;   
+    }
+    .footer li{
+        font-size: 18px;
+        width: 100%;
+        color:chocolate;
+    }
+    .footer .sub-li
+    {
+        font-size: 14px;
+    }
+    .footer .logo-f{
+        padding-top: 10px;
+    }
+    .footer .logo-f img{
+        width: 40px;
+    }
+    
+    .footer .listas{
+        flex-direction: column;
+        align-items:center;
+        line-height: 1.5rem;
+    }
+    .footer ul{
+        text-align: center;
+    }
+}

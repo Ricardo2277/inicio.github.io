@@ -1,0 +1,571 @@
+@font-face {
+    font-family: Ciber;
+    src: url(../fonts/Aldrich-Regular.ttf);
+}
+@font-face {
+    font-family: Parr-TL ;
+    src: url(../fonts/TitilliumWeb-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: Ciber;
+    
+    
+}
+
+header{
+    top: 0% ;           /* Pegada al top */
+    position: fixed;   /*  Flotante */
+    z-index: 10;
+    width: 100%;
+    height: 110px;
+    padding-top: 0.5%;
+    /* background-color: rgb(165, 42, 42); */
+    background: linear-gradient(#000000,transparent);
+    display: flex;
+    
+}
+
+.barra{
+    position: relative;
+    width: 100%;
+    height: 75px;
+    background: transparent;
+    
+    display: flex;
+    align-items: center;
+    
+}
+.menu-amb{
+    display: none; /* MENU QUE USAREMOS MAS ADELANTE AL CAMBIAR RESOLUCION */
+}
+.cerrar-amb{
+    display: none; /* MENU QUE USAREMOS MAS ADELANTE AL CAMBIAR RESOLUCION */
+}
+.logo{
+    height: 65px;
+    margin-left: 2%;
+    background: transparent;
+    
+}
+.menu a{
+    /* background: transparent; */
+    
+    /* font-size: 16px; */
+    transition: color 0.4s;   /* Alentar el tiempo de transicion hacia el hover */
+    padding:0 15px;
+    text-decoration: none; /* QUITAR LINEA */
+    /* transform: scale(10%); */
+}
+.login a:hover, .menu a:hover {
+    
+    color: rgb(246, 107, 14);
+  /*   font-size: 17px; */
+    
+  
+    
+    
+}
+.barra .login{
+    display: flex;
+    
+    position: absolute;
+    right: 0;
+    
+    
+    margin-right: 2%;
+    background: transparent;
+    
+    align-items: center;
+    gap: 12px;  /* Observar posible cambio a porcentaje a futuro o creacion de div entre elementos */
+    
+}
+
+
+.login img{
+width: 20px;
+}
+
+
+
+
+
+
+section{
+    width: 100%;   
+    background-color:black;
+}
+
+.sec-1{
+    
+    height: 700px;
+    display: flex;
+    
+    /* align-items: center; */
+}
+.sec-1 .posicion{
+    /* position:static; */
+    width: 100%;
+    height: 700px;
+    top: 0%;
+    left: 0%;
+    /* transform: translate(-100% -100%); */
+    
+}
+
+.sec-1 .slider{
+    background-image: url(../img/slider-p/aorus1.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    /* animation:animate 45s infinite alternate ease; */
+    animation: animacion-promocional 40s ease 3s;   /* PROPIEDAD PARA ANIMAR-- "animacion-promocional" [ES EL NOMBRE DE LA ANIMACION]-- "40s" [DURACION TOTAL DE LA ANIMACION]-- "ease" [TIPO DE ANIMACION O DESPLAZAMIENTO DE TRANSICION]  "1s" [DELAY O ESPERA ANTES DE COMENZAR LA ANIMACION] */
+    animation-iteration-count:infinite; /* SE EJECUTARA HASTA EL INFINITO */
+    
+}
+@keyframes animacion-promocional{
+    5%{
+        background-image: url(../img/slider-p/aorus5.jpg);
+    background-size: cover;
+    }
+    20%{
+        background-image: url(../img/slider-p/aorus5.jpg);
+        background-size: cover;
+    }
+    25%{
+        background-image: url(../img/slider-p/aorus4.jpg);
+    background-size: cover;
+    }
+    40%{
+        background-image: url(../img/slider-p/aorus4.jpg);
+        background-size: cover;
+    }
+    45%{
+        background-image: url(../img/slider-p/aorus3.jpg);
+    background-size: cover;
+    }
+    60%{
+        background-image: url(../img/slider-p/aorus3.jpg);
+        background-size: cover;
+    }
+    65%{
+        background-image: url(../img/slider-p/aorus2.jpg);
+    background-size: cover;
+    }
+    80%{
+        background-image: url(../img/slider-p/aorus2.jpg);
+        background-size: cover;
+    }
+    85%{
+        background-image: url(../img/slider-p/aorus1.jpg);
+    background-size: cover;
+    }
+    100%{
+        background-image: url(../img/slider-p/aorus1.jpg);
+        background-size: cover;
+    }
+}
+/* .sec-1 .im-1{
+    
+    width:100%;
+    background-color:red;
+    
+    height: 600px;
+    background-image: url(../img/aorus1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    
+} */
+
+
+.sec-2{ /* section .sec-2{ */
+    height: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+    /* background-color: bisque ; */
+    
+    
+    
+}
+.sub-t{
+    font-size: 50px;
+    
+}
+.texto{
+    font-size: 20px;
+    font-family: Parr-TL;
+    max-width: 800px;       /* Limite la anchura del text */
+    /* padding-left: 25%;
+    margin-right: 25%; */
+    text-align:center;
+    padding-top: 2rem;
+    
+}
+.sec-2 img{
+    
+    width: 200px;
+    
+}
+
+
+
+.sec-2 .scroll-sec-2{
+    /* background-color: chocolate; */
+    /* overflow-x:scroll;*/
+    width: 100vw; 
+    /* transition:;  CHECAR */
+    position: relative;  /* PARA COLOCAR LA POSICN ABSOLUTA NO SALGA DE LA SECICON SCROLL */
+    display: flex;  /* Para poder centrar la ul  */
+    justify-content: center;
+   
+}
+.sec-2 ul{
+
+    display: inline-flex;
+    padding-top: 2rem;
+    list-style: none;
+    gap: 5rem;
+    overflow-x:hidden;/* overflow-x:scroll; */
+    /* width: 900px; */
+    width: 90vw;
+    
+    
+    
+}
+.scroll-sec-2 .btn-ant{
+    background-image: url(../img/scroll/ant.png) ;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    transition: background-color 1.5s;
+}
+.scroll-sec-2 .btn-sig{
+    background-image: url(../img/scroll/sig.png) ;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    transition: background-color 1.5s;
+}
+/* .scroll-sec-2 .btn-ant:hover{
+    
+    
+} */
+
+/*-- AUN REVISAR PARA BOTONES LATERALES---
+.scroll-sec-2 ::before{ 
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 1;              Oden de sobreposicion 
+    background-color:aqua;
+    height: 100%;
+    width: 50px;
+} 
+.scroll-sec-2::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 1;          Oden de sobreposicion 
+    background-color: aqua;
+    height: 100%;
+    width: 50px;
+} 
+*/
+
+
+.sec-3{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.sec-4{
+
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    /* justify-content: center; */
+    align-items: center;
+
+    background-image: url(../img/aorus2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec-4 .texto{
+    position: relative;
+    bottom: -40%;  /* Observar esto */
+}
+footer{
+    width: 100%;
+    height: 450px;
+    background-color: #1f1f1f;
+    display: grid;  
+    
+    grid-template-rows: 30% 20% 50%;
+}
+footer div{
+    display: flex;
+    justify-content: center ;
+    
+    
+}
+footer .logo-f{
+    grid-row: 1/2;
+    padding-top: 2rem;
+}
+footer .redes-s{
+    grid-row: 2/3;
+    align-items: center;
+    gap: 1rem;
+}
+footer .listas{
+    
+    grid-row: 3/4;
+    line-height: 2rem;  /* Espaciado en renglones horizontal */
+    
+    gap: 4%;
+    font-size: 20px;
+    
+    
+}
+footer ul{
+    list-style: none;
+}
+footer .sub-li{
+    font-family: Parr-TL;
+    font-size: 14px;
+    
+}
+footer .listas a{
+ text-decoration: none;   
+}
+/*---------------------- MENU RESPONSIVO  900px--------------------------*/
+@media(max-width: 900px){
+    
+    .barra{
+        flex-direction: column;
+        
+    }
+    .menu-amb{
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        width: 30px;
+        display:unset;
+        cursor: pointer;
+        transition: 0.15s;
+    }
+    .menu-amb:hover{
+        width: 40px;
+        
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+        transition: 0.2s;
+        width: 50%;
+        /* background-color: rgb(149, 99, 193); */
+        background-color:chocolate;
+        position: absolute;
+        left: 15px;
+        top: 65px;
+        opacity: .9;
+        
+    }
+    .menu a:hover{
+        
+        color:#000000;
+    }
+    h1{
+        display: none;
+    }
+    .login{
+        right: 15px;
+        top: 20px;
+    }
+    .login img{
+        transition: 0.2s;
+    }
+    .login img:hover{
+        width: 30px;
+    }
+    .sec-1 .slider{
+        background-position: center;
+        height: 400px;
+    }
+    /* .footer{
+        display: none;
+    } */
+    
+    
+     #inp-amb:checked ~.menu{/* AL ESTAR CHECADO EL INPUT, AFECTARA LAS PROPIEDADES DE .menu */
+        
+        width: 0%;  
+        font-size: 0;
+        
+    } 
+    .sub-t{
+        font-size: 35px;
+    }
+    .texto{
+        font-size: 18px;
+    }
+
+}
+
+/* FINALIZA MEDIA */
+/*---------------------- MENU RESPONSIVO  900px--------------------------*/
+@media(max-width: 500px){
+    .logo{
+        height: 50px;
+        padding-top: 5px;
+    }
+    .header{
+        height: 70px;
+
+    }
+    .barra{
+        flex-direction: column;
+        
+    }
+    .menu-amb{
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        width: 30px;
+        display:unset;
+        cursor: pointer;
+        transition: 0.15s;
+    }
+    .menu-amb:hover{
+        width: 40px;
+        
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+        transition: 0.2s;
+        width: 93%;
+        /* background-color: rgb(149, 99, 193); */
+        background-color:chocolate;
+        position: absolute;
+        left: 15px;
+        top: 65px;
+        
+        opacity: .9;
+        
+    }
+    .menu a:hover{
+        
+        color:#000000;
+    }
+    h1{
+        display: none;
+    }
+    .login{
+        right: 15px;
+        top: 20px;
+    }
+    .login img{
+        transition: 0.2s;
+    }
+    .login img:hover{
+        width: 30px;
+    }
+    
+    
+    
+    
+     #inp-amb:checked ~.menu{/* AL ESTAR CHECADO EL INPUT, AFECTARA LAS PROPIEDADES DE .menu */
+        
+        width: 0%;  
+        font-size: 0;
+        
+    }
+    .sub-t{
+        color: aqua;
+        font-size: 25px;
+        
+        
+        
+    }
+    .texto{
+        font-size: 14px;
+        text-align:center;
+    }
+
+    .sec-1 .slider{
+        background-position: center;
+        height: 400px;
+    }
+
+    .footer{
+        
+        grid-template-rows: 50px 50px 450px;
+        height: 800px;
+        justify-content: center;
+        
+        
+    }
+    .footer li{
+        font-size: 18px;
+        width: 100%;
+        color:chocolate;
+    }
+    .footer .sub-li
+    {
+        font-size: 14px;
+    }
+    .footer .logo-f{
+        padding-top: 10px;
+    }
+    .footer .logo-f img{
+        
+        width: 40px;
+        
+    }
+    
+    .footer .listas{
+        
+        flex-direction: column;
+        align-items:center;
+        
+        line-height: 1.5rem;
+        
+    }
+    .footer ul{
+        
+        text-align: center;
+        
+    }
+    
+    
+}
+
+/* FINALIZA MEDIA */
+
+/* --------MEDIA 900px  ----FOOTER */
+
+/* --------AQUI FINALIZA----FOOTER*/
+
+

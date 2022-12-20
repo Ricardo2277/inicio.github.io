@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecno-Link</title>
+    <link rel="Stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/styles.css">
+
+	    <link rel="Stylesheet" href="menu.css">  
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="barra">
+            <!-- COMIENZA MENU AMBURGUEZA OCULTO -->
+            <label for="inp-amb">
+                <img src="img/icon-menu.png" class="menu-amb">
+                <img src="img/cerrar-menu.png" class="cerrar-amb">
+            </label>
+            <input type="checkbox" id="inp-amb" checked hidden><!-- CHECADA POR DEFECTO -->
+            <!-- FINALIZA MENU AMBURGUEZA OCULTO -->
+            <div class="logo">
+                <a href="index.html"><img class="logo" src="img/Logotipo.png"></a>
+            </div>
+            <div class="menu">
+                <a href="#">PRODUCTOS</a>
+                <a href="#">OFERTAS</a>
+                <a href="#">NOTICIAS</a>
+                <a href="#">CONTACTO</a>
+            </div>
+            <div class="login">
+                <h1>Tecno-Link</h1>
+                <a href="login.html"><img src="img/usuario.png"></a>
+            </div>
+        
+    </header>
+    <main>
+        <section class="sec-1">
+            <div class="slider posicion"></div>
+        </section>
+
+        <section class="sec-2">
+            <p class="sub-t">Nuestros Productos</p>
+            <p class="texto">Tecno-Link brinda equipos de alta calidad para el diseño, arquitectura y el gaming, escuchándo a nuestros clientes y mejorando constantemente nuestros productos para maximizar su rendimiento y cumplir nuestros objetivos.</p>
+
+            <div class="scroll-sec-2">
+                <button class="btn-ant" style="width:2.5rem;" onclick="scroll_izq()" ></button>
+                <ul class="Lista-sec2">
+                    <li>
+                        <a href="#"><img src="img/scroll/1.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/scroll/2.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/scroll/3.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/scroll/4.png"></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><img src="img/scroll/1.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/scroll/2.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/scroll/3.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/scroll/4.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/scroll/1.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/scroll/2.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/scroll/3.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/scroll/4.png"></a>
+                    </li>
+
+                </ul>
+                <button class="btn-sig" style="width:2.5rem;" onclick="scroll_der()"></button>
+            </div>
+
+        </section>
+
+        <section class="sec-3">
+            <p class="sub-t">#Eplorar más</p>
+            <p class="texto">Descubre un mundo lleno de posibilidades con nuestros consejos acerca de pc’s, diseños, videojuegos. Enterate sobre nuevas formas de implementar mejoras y actualizaciones a tu equipo y llevarlo al siguiente nivel.</p>
+        </section>
+
+        <section class="sec-4">
+            <p class="sub-t">Únete al equipo de Tecno-Link</p>
+            <p class="texto">Registrate y descubre las increíbles ofertas que tenemos para ti, si ya tienes una cuenta inicia sesión y continúa tu navegación habitual.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="logo-f">
+            <a href="index.html"><img src="img/Logotipo.png" width="120px"></a>
+        </div>
+        <div class="redes-s">
+            <a href="#"><img src="img/facebook.png" width="25px"></a>
+            <a href="#"><img src="img/twitter.png" width="25px"></a>
+            <a href="#"><img src="img/instagram.png" width="25px"></a>
+        </div>
+        <div class="listas">
+            <ul class="ul1">
+                <li >PRODUCTOS</li>
+                <li class="sub-li"><a href="#">PC gaming</a></li>
+                <li class="sub-li"><a href="#">LapTop gaming</a></li>
+                <li class="sub-li"><a href="#">Perifericos</a></li>
+                <li class="sub-li"><a href="#">monitores</a></li>
+            </ul>
+            <ul class="ul2">
+                <li>OFERTAS</li>
+                <li class="sub-li"><a href="#">Lo nuevo del dia</a></li>
+                <li class="sub-li"><a href="#">Hasta con 40%</a></li>
+            </ul>
+            <ul class="ul3">
+                <li>NOTICIAS</li>
+                <li class="sub-li"><a href="#">Explorar</a></li>
+                <li class="sub-li"><a href="#">Conoce</a></li>
+                <li class="sub-li"><a href="#">Eventos</a></li>
+            </ul>
+            <ul class="ul4">
+                <li>CONTACTO</li>
+                <li class="sub-li"><a href="#">tecnolinkitj@gmail.com</a></li>
+                <li class="sub-li">353-111-2345</li>
+                <li class="sub-li"><a href="#">Soporte</a></li>
+            </ul>
+
+        </div>
+        
+        
+    </footer>
+
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>
